@@ -1,8 +1,12 @@
-// Represent a user
+using App;
+namespace TradingApp
 
-class user
+// Represent a user
+public class User
 {
-    public int Id;
-    public string Username;
-    public string Password;
-}
+    public int Id { get; set; } // User unique ID Number
+    public string { get; set; } //  User Login name 
+    public string { get; set; } // User Log in Password 
+
+Console.WriteLine ("Welcome to trading app";
+Console.ReadLine();
