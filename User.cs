@@ -1,12 +1,19 @@
-using App;
-namespace TradingApp
-
 // Represent a user
+namespace App;
+
 public class User
 {
-    public int Id { get; set; } // User unique ID Number
-    public string { get; set; } //  User Login name 
-    public string { get; set; } // User Log in Password 
+    public string Email;// User Login name 
+    string _password;// User Log in Password 
+    public User(string email, string password)
+    {
+        Email = email;
+        _password = password;
 
-Console.WriteLine ("Welcome to trading app";
-Console.ReadLine();
+    }
+    public bool TryLogin(string username, string password)
+    {
+        return username == Email && password == _password;
+    }
+
+}
