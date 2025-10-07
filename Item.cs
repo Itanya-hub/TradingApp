@@ -1,14 +1,18 @@
 //Represent a trade item
 namespace App;
 
-class Item
-{
-    public string Name;
-    public string Description;
+public class Item
 
-    public Item(string name, string desciption)
+{
+    // These are the permanent Fields (PascalCase)
+    public string ItemName;     // Name of item
+    public User Owner = null!;    // Who owns this item 
+
+    //  These are the temporary Parameters (camelCase)
+    public Item (string itemName, User owner) 
     {
-        Name = name;
-        Description = desciption;
+        // // Assignment: Permanent Field = Temporary Parameter
+        this.ItemName = itemName;
+        this.Owner = owner;
     }
 }

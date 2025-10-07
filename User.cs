@@ -15,5 +15,9 @@ public class User
     {
         return username == Email && password == _password;
     }
-
+         // Helper to get password when saving to file
+    public string GetPassword()
+    {
+        return _password;
+    }
 }
